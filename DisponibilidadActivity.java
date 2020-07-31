@@ -77,9 +77,6 @@ public void clasesGrupalesOnClick( View view){
 }
 
 
-
-
-    //menuuuuuuuuuuuuuuuuuuuuuuuu
     Context context = this;
 
     public RolUser leerArchivoTextRol() {
@@ -124,7 +121,7 @@ public void clasesGrupalesOnClick( View view){
 
 
 
-    ///menuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
@@ -149,9 +146,9 @@ public void clasesGrupalesOnClick( View view){
                                     Intent intent = new Intent(context, MainActivity.class);
                                     startActivity(new Intent(context, MainActivity.class));
                                     return true;
-                                case R.id.verInscritosID:
-                                    return true;
+
                                 case R.id.agregarclaseID:
+                                    startActivity(new Intent(context, CrearClaseGrupal.class));
                                     return true;
 
                                 default:
@@ -191,6 +188,9 @@ public void clasesGrupalesOnClick( View view){
 
                 }
                 return true;
+            case (R.id.listaAsesoriasID):
+                startActivity(new Intent(context, ListaAsesoriaPersoActivity.class));
+                return true;
             default:
                 return true;
         }
@@ -199,8 +199,6 @@ public void clasesGrupalesOnClick( View view){
 
 
     }
-
-
 
 
 

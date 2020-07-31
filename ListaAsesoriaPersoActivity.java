@@ -128,8 +128,6 @@ public class ListaAsesoriaPersoActivity extends AppCompatActivity {
     }
 
 
-
-    //menuuuuuuuuuuuuuuuuuuuuuuuu
     Context context = this;
 
     public RolUser leerArchivoTextRol() {
@@ -174,7 +172,7 @@ public class ListaAsesoriaPersoActivity extends AppCompatActivity {
 
 
 
-    ///menuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
@@ -199,9 +197,9 @@ public class ListaAsesoriaPersoActivity extends AppCompatActivity {
                                     Intent intent = new Intent(context, MainActivity.class);
                                     startActivity(new Intent(context, MainActivity.class));
                                     return true;
-                                case R.id.verInscritosID:
-                                    return true;
+
                                 case R.id.agregarclaseID:
+                                    startActivity(new Intent(context, CrearClaseGrupal.class));
                                     return true;
 
                                 default:
@@ -241,6 +239,9 @@ public class ListaAsesoriaPersoActivity extends AppCompatActivity {
 
                 }
                 return true;
+            case (R.id.listaAsesoriasID):
+                startActivity(new Intent(context, ListaAsesoriaPersoActivity.class));
+                return true;
             default:
                 return true;
         }
@@ -249,7 +250,6 @@ public class ListaAsesoriaPersoActivity extends AppCompatActivity {
 
 
     }
-
 }
 
 

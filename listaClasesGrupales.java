@@ -53,9 +53,6 @@ int rol_idrol;
         });
 
     }
-
-//menuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
-
     Context context = this;
 
     public RolUser leerArchivoTextRol() {
@@ -125,9 +122,9 @@ int rol_idrol;
                                     Intent intent = new Intent(context, MainActivity.class);
                                     startActivity(new Intent(context, MainActivity.class));
                                     return true;
-                                case R.id.verInscritosID:
-                                    return true;
+
                                 case R.id.agregarclaseID:
+                                    startActivity(new Intent(context, CrearClaseGrupal.class));
                                     return true;
 
                                 default:
@@ -167,6 +164,9 @@ int rol_idrol;
 
                 }
                 return true;
+            case (R.id.listaAsesoriasID):
+                startActivity(new Intent(context, ListaAsesoriaPersoActivity.class));
+                return true;
             default:
                 return true;
         }
@@ -175,8 +175,5 @@ int rol_idrol;
 
 
     }
-
-
-
 
 }

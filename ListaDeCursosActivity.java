@@ -270,8 +270,6 @@ public class ListaDeCursosActivity extends AppCompatActivity {
         notificationManager.notify(1,builder.build());
 
     }
-
-//menuuuuuuuuuuuuuuuuuuuuuuuu
     Context context = this;
 
     public RolUser leerArchivoTextRol() {
@@ -316,7 +314,7 @@ public class ListaDeCursosActivity extends AppCompatActivity {
 
 
 
-///menuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
@@ -341,9 +339,9 @@ public class ListaDeCursosActivity extends AppCompatActivity {
                                     Intent intent = new Intent(context, MainActivity.class);
                                     startActivity(new Intent(context, MainActivity.class));
                                     return true;
-                                case R.id.verInscritosID:
-                                    return true;
+
                                 case R.id.agregarclaseID:
+                                    startActivity(new Intent(context, CrearClaseGrupal.class));
                                     return true;
 
                                 default:
@@ -383,6 +381,9 @@ public class ListaDeCursosActivity extends AppCompatActivity {
 
                 }
                 return true;
+            case (R.id.listaAsesoriasID):
+                startActivity(new Intent(context, ListaAsesoriaPersoActivity.class));
+                return true;
             default:
                 return true;
         }
@@ -391,8 +392,6 @@ public class ListaDeCursosActivity extends AppCompatActivity {
 
 
     }
-
-
 
 
 }

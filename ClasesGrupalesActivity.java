@@ -276,8 +276,6 @@ public class ClasesGrupalesActivity extends AppCompatActivity {
     }
 
 
-
-    //menuuuuuuuuuuuuuuuuuuuuuuuu
     Context context = this;
 
     public RolUser leerArchivoTextRol() {
@@ -322,7 +320,7 @@ public class ClasesGrupalesActivity extends AppCompatActivity {
 
 
 
-    ///menuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
@@ -347,13 +345,10 @@ public class ClasesGrupalesActivity extends AppCompatActivity {
                                     Intent intent = new Intent(context, MainActivity.class);
                                     startActivity(new Intent(context, MainActivity.class));
                                     return true;
-                                case R.id.verInscritosID:
-                                    return true;
-                                case R.id.agregarclaseID:
 
+                                case R.id.agregarclaseID:
                                     startActivity(new Intent(context, CrearClaseGrupal.class));
                                     return true;
-
 
                                 default:
                                     startActivity(new Intent(context, ListaAsesoriaPersoActivity.class));
@@ -395,7 +390,6 @@ public class ClasesGrupalesActivity extends AppCompatActivity {
             case (R.id.listaAsesoriasID):
                 startActivity(new Intent(context, ListaAsesoriaPersoActivity.class));
                 return true;
-
             default:
                 return true;
         }
@@ -404,9 +398,6 @@ public class ClasesGrupalesActivity extends AppCompatActivity {
 
 
     }
-
-
-
 
 }
 

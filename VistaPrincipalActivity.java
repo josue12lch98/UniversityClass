@@ -339,7 +339,7 @@ public class VistaPrincipalActivity extends AppCompatActivity {
         }
     }
 
-
+//------------------------------------
     Context context = this;
 
     public RolUser leerArchivoTextRol() {
@@ -409,9 +409,9 @@ public class VistaPrincipalActivity extends AppCompatActivity {
                                     Intent intent = new Intent(context, MainActivity.class);
                                     startActivity(new Intent(context, MainActivity.class));
                                     return true;
-                                case R.id.verInscritosID:
-                                    return true;
+
                                 case R.id.agregarclaseID:
+                                    startActivity(new Intent(context, CrearClaseGrupal.class));
                                     return true;
 
                                 default:
